@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <title>Coin Flipping challenge</title>
+        <link rel="stylesheet" href="coin.css">
+    </head>
+</html>
+
+<body>
+    
+
+    <div class="container">
+        <h1>Just a Coin flipping webpage</h1>
+        <div id="coin" class="coin">
+            <div id="heads" class="heads"></div>
+            <div id="tails" class="tails"></div>
+        </div>
+        <button id="flip">Flip this coin</button>
+                
+        <p>heads:<span id="headsCount">0</span> 
+            Tails:<span id="tailsCount">0</span>
+        </p>
+        <p><span id="status">0</span></p>
+        <p><span id="random">random</span>
+        <p><span id="testing">testing2</span>
+        <script src=coin.js type="text/javascript">
+
+        </script>
+
+    </div>
+</body>
+<body>
+    <div id="nav-placeholder"></div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+    $.get("navbar/navBar.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+</body>
+</html>

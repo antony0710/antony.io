@@ -1,0 +1,65 @@
+h2{
+    margin: .25rem;
+
+}
+div.container{
+    margin: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    padding: 1rem;
+    background-color: skyblue;
+
+}
+#coin{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 0rem;
+    transform-style: preserve-3d;
+}
+#coin div{
+    width: 100%;
+    height: 100%;
+    border: 2px solid gold;
+    border-radius: 50%;
+      backface-visibility: hidden;
+    background-size:contain;
+    position: absolute;   
+}
+.heads{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/b/bc/HKD_1998_1_Dollar.jpg);
+    
+}
+.animate-heads{
+    animation: flipHeads 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes flipHeads{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(1800deg);
+    }
+}
+.tails{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Hk1dollarcoina.JPG/220px-Hk1dollarcoina.JPG);
+    transform: rotateY(180deg);
+}
+
+.animate-tails{
+    animation: flipTails 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipTails{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(1620deg);
+    }
+}
